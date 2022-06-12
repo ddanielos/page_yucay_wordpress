@@ -1,0 +1,73 @@
+.banner
+   max-width 1920px
+   max-height 464px
+   background-color color_secundario
+   height 24vw
+   &-container
+      height 100%
+      display flex
+      justify-content: space-around
+      align-items: center
+   &-left
+      visibility visible
+      display inline-grid
+      justify-items center
+      img
+         padding 10px 0px
+   .blandas
+      width 26vw
+      max-width 495px
+      min-width: 319px
+
+   &-right
+      display inline-grid
+      justify-items center
+      img
+         padding 10px 0px
+      .ave
+         transform scaleX(-1)
+   &-center
+      height 100%
+      display flex
+      align-items: center
+      &__container
+         max-height 254px
+         display flex
+         flex-direction column
+         justify-content space-around
+         align-items: center
+      .frases
+         font-family Fuente1
+         font-size 16px
+         font-weight 700
+         letter-spacing: 2pt
+         color color_principal
+         padding-top 30px
+         padding-bottom 30px
+      .Todas
+         padding 20px
+         border 8px solid color_principal
+         font-family Fuente1
+         font-size 36px
+         font-weight 700
+         color color_principal
+         text-transform uppercase
+   @media (max-width: 1594px)
+      .Todas
+         font-size 23px
+   @media (max-width: 1334px)
+      &-left
+         display none
+      &-right .ave
+         display none
+   @media (max-width: 1023px)
+      z-index: 10
+      height: auto
+      width: 100%
+      &-container
+         height 100%
+         flex-direction: column
+      &-right .blandas
+         padding-bottom: 25px
+      &-center__container
+         display none

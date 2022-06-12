@@ -1,0 +1,21 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#3018b6",
+    "titleBar.inactiveBackground": "#3018b6",
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveForeground": "#ffffff",
+
+    "activityBar.background": "#3018b6",
+    "activityBar.foreground": "#ffffff"
+  },
+  "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.editor.decorations.colors": true,
+  "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.preferredHighContrastColorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.preferredHighContrastLightColorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  "workbench.sideBar.location": "left",
+  "comments.useRelativeTime": true,
+  "editor.comments.insertSpace": true
+}

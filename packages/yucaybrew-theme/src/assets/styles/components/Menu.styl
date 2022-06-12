@@ -1,0 +1,122 @@
+.container-left
+   width: menu_width
+.container-right
+   width: menu_width
+.container-center
+   margin-left auto
+   margin-right auto
+.container-header
+   max-width 1920px
+   position fixed
+   z-index 5
+.menu
+   visibility visible
+   position initial
+   opacity 1
+   left 0
+   right 0
+   text-align center
+   mixin-menu(size_menu_1920)
+   &-left
+   &-right
+      visibility visible
+   & ul
+      list-style none
+      display inline-block
+      margin auto
+      padding 0   
+   &-item
+      padding-left: 1.5em
+      padding-right: 1.5em
+      height 31px
+      line-height: 2
+      color #2d292b
+      float left
+      transition all 300ms ease
+      img
+         width 31px
+         height auto
+         padding-left  7px
+         padding-bottom 5px
+         display inline-block
+         vertical-align middle
+      p
+         display inline-block
+         vertical-align middle
+   &-logo 
+      width 141px
+      height auto
+      display: block
+      margin: auto
+      &:hover
+         cursor pointer
+.menu-item:hover
+   text-shadow 1px 0px 3px #bbb7ac
+   cursor pointer
+@media (max-width: 1594px)
+   .menu
+      visibility visible
+      opacity 1
+      position: initial
+      height auto
+      mixin-menu(size_menu_1360)
+      .menu-logo
+         width 115px
+      .menu-item 
+         padding-left: 1.5em
+         padding-right: 1.5em
+         img
+            width 25px
+@media (max-width: 1334px)
+   .menu
+      visibility visible
+      opacity 1
+      position: initial
+      height auto
+      mixin-menu(size_menu_1024)
+      .menu-logo
+         width 95px
+      .menu-item 
+         padding-left: 1.2em
+         padding-right: 1.2em
+         img
+            width 22px
+@media (max-width: 1023px)   
+   .menu
+      &-left 
+      &-right
+         visibility hidden
+      .menu-logo
+         visibility hidden
+      height 72px
+   .menu-open
+      margin-top 15px
+      margin-left 15px
+      user-select: none
+      width 30px
+      height 40px
+      display: inline-flex
+      cursor: pointer
+      background-size cover
+      position: absolute
+      z-index 4
+   .sale_white
+      margin-top 13px
+      margin-left calc(100vw - 50px)
+      user-select none
+      width 30px
+      height 40px
+      display inline-block
+      cursor pointer
+      background-size percentage(1)
+      background-repeat no-repeat
+      position absolute
+      z-index 4
+   .container-center
+      padding-top 140px
+      width 250px
+   .container-left
+   .container-right
+      visibility hidden
+   .u-wrapper
+      visibility hidden

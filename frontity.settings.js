@@ -2,50 +2,32 @@ const settings = {
   "name": "yucaybrewery",
   "state": {
     "frontity": {
-      "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
+      "url": "https://yucaybrew.com",
+      "title": "Cervecería artesanal en el corazón del Valle Sagrado",
+      "description": "Cervecería artesanal en el corazón del Valle Sagrado"
     }
   },
   "packages": [
     {
-      "name": "@frontity/mars-theme",
-      "state": {
-        "theme": {
-          "menu": [
-            [
-              "Home",
-              "/"
-            ],
-            [
-              "Nature",
-              "/category/nature/"
-            ],
-            [
-              "Travel",
-              "/category/travel/"
-            ],
-            [
-              "Japan",
-              "/tag/japan/"
-            ],
-            [
-              "About Us",
-              "/about-us/"
-            ]
-          ],
-          "featured": {
-            "showOnList": false,
-            "showOnPost": false
-          }
-        }
-      }
+      "name": "yucaybrew-theme"
     },
     {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://test.frontity.org"
+          "url": "https://yucaybrew.com/",
+          "postTypes": [
+            {
+              type: "beer",
+              endpoint: "beer",
+              archive: "/beers"
+            },
+            {
+              type: "blogs",
+              endpoint: "blogs",
+              archive: "/blogs"
+            }
+          ]
         }
       }
     },
