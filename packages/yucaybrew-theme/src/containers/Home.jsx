@@ -15,7 +15,8 @@ const Home = ({state, actions}) => {
   const data = state.source.get(state.router.link)
 
   useEffect(()=>{
-    actions.source.fetch("/blogs")
+    actions.source.fetch("/blogs");
+    actions.source.fetch("/beers");
   },[])
   return(
     <>

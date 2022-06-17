@@ -1,17 +1,22 @@
 import React from 'react'
-import {connect} from 'frontity'
-//import '../assets/styles/styles.styl'
+import {connect, styled, css} from 'frontity'
+import {color_principal, color_secundario, color_terciario, Fuente2} from '../styles/Variables'
+
+const StyleListOfBeers = styled.div`
+    display: inline-block;
+    background-color: ${color_principal};
+`
+const Upper = styled.section`
+    background-color: ${color_terciario};
+    height: 170px;
+`
 
 const ListOfBeers = ({children}) => {
     return(
-        <div className="listOfBeers">
-            <section className="upper">
-            </section>
-            <h1 className="title"></h1>
-
+        <StyleListOfBeers>
+            <Upper />
             {children}
-        </div>
-        
+        </StyleListOfBeers>
     )
 }
 

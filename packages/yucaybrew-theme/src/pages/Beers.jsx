@@ -20,8 +20,8 @@ const Beers = ({state}) => {
                 key={id}
                 title={beer.title.rendered}
                 cover={beer.acf.cover}
-                description={beer.acf.description}
-                details={beer.acf.details}
+                details={beer.acf.description}
+                description={beer.acf.details}
                 pair={beer.acf.pair}
                 abv={beer.acf.abv}
                 intensity={beer.acf.intensity}

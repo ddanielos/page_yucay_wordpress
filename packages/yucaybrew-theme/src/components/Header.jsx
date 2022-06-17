@@ -19,7 +19,7 @@ const StyleHeader = styled.header`
   left: 0;
   right: 0;
   padding: 0;
-  background-color: rgba(244, 239, 226, 0.95);
+  background-color: rgba(244, 239, 226, 0.99);
 `
 const Menu = styled.nav`
   visibility: visible;
