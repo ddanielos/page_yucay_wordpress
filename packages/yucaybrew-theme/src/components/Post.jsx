@@ -21,9 +21,22 @@ const Container = styled.div`
     text-transform: uppercase;
     font-family: ${Fuente2};
   }
+`
+const Details = styled.div`
+  line-height:30px;
 
-  & div{
-    line-height:25px;
+  & p{
+    font-family: ${Fuente1};
+  }
+  & li{
+    font-family: ${Fuente1};
+  }
+
+  & strong {
+    padding-top: 20px;
+  }
+  & em{
+    font-style: normal;
   }
 
   & strong{
@@ -47,12 +60,10 @@ const Container = styled.div`
   }
 
   & blockquote {
+    text-align: center;
     font-style: italic;
     font-size: 1rem;
     font-family: ${Fuente2};
-  }
-  & blockquote p{
-    text-align: center;
   }
   & blockquote cite{
     quotes: "« " " »";
@@ -75,10 +86,11 @@ const Post = ({state}) => {
       <Upper />
       <Container>
         <h2>{blog.title.rendered}</h2>
-        <div dangerouslySetInnerHTML={{__html: blog.content.rendered}}></div>
+        <Details dangerouslySetInnerHTML={{__html: blog.content.rendered}}></Details>
       </Container>
     </>
   )
+
 }
 
 export default connect(Post);
