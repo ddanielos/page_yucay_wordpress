@@ -117,7 +117,9 @@ const Header = () => {
                       Blog
                     </MenuItem>
                   </Link>
+                  <Link href="/contact">
                     <MenuItem>Contacto</MenuItem>
+                  </Link>
                     <MenuItem>
                           Login
                       <MenuItemImg src={user} alt=""/>

@@ -78,9 +78,7 @@ const Details = styled.div`
 
 const Post = ({state}) => {
   const data = state.source.get(state.router.link)
-  console.log(data.id)
   const blog = state.source.blogs[data.id]
-  console.log(blog)
   return (
     <>
       <Upper />

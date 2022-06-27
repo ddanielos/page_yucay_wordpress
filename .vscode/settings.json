@@ -9,12 +9,12 @@
     "activityBar.foreground": "#ffffff"
   },
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.colorTheme": "Monokai",
   "workbench.editor.decorations.colors": true,
   "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
   "workbench.preferredHighContrastColorTheme": "Monokai Pro (Filter Spectrum)",
   "workbench.preferredHighContrastLightColorTheme": "Monokai Pro (Filter Spectrum)",
-  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "left",
   "comments.useRelativeTime": true,
   "editor.comments.insertSpace": true

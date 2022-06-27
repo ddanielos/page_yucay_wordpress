@@ -7,6 +7,7 @@ import Banner from '../components/Banner';
 import Beers from '../pages/Beers'
 import Blogs from '../pages/Blogs'
 import Post from '../components/Post'
+import Contact from '../components/Contact';
 
 const ContainerHome = styled.div`
   width: 100%;
@@ -32,6 +33,7 @@ const Home = ({state, actions}) => {
         {data.isBeerArchive && <Beers />}
         {data.isBlogsArchive && <Blogs />}
         {data.isBlogs && <Post />}
+        {data.isPage && <Contact />}
       </ContainerHome>
     </>
   )
