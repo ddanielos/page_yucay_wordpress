@@ -68,6 +68,7 @@ const BannerTodas = styled.p`
    font-weight: 700;
    color: ${color_principal};
    text-transform: uppercase;
+   letter-spacing:0.1rem;
 `
 
 const Banner = () => {

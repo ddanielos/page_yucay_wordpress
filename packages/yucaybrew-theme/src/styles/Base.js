@@ -7,7 +7,7 @@ const Base = () => {
   return (
     <Global
       styles = {css`
-        @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&family=Roboto+Mono:wght@400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@700;800&family=Roboto+Mono:wght@400;500;700&display=swap');
 
         *{
           margin: 0;
