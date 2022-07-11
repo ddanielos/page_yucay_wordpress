@@ -8,9 +8,13 @@ const Upper = styled.section`
 `
 
 const Instagram = ({state, libraries }) => {
+    const data = state.source.get(state.router.link)
+    const page = state.source.page[71]
+    const Html2react = libraries.html2react.Component;
     return(
         <>
             <Upper />
+            <Html2react html={page.content.rendered}/>
         </>
     )
 }

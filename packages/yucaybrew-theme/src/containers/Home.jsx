@@ -9,6 +9,7 @@ import Blogs from '../pages/Blogs'
 import Post from '../components/Post'
 import Contact from '../components/Contact';
 import Bar from '../components/Bar';
+import Insta2 from '../components/Insta2';
 import Instagram from '../components/Instagram';
 
 const ContainerHome = styled.div`
@@ -20,7 +21,6 @@ const Home = ({state, actions}) => {
   useEffect(()=>{
     actions.source.fetch("/blogs");
     actions.source.fetch("/beers");
-    actions.source.fetch("/nuestro-instagram");
   },[])
   return(
     <>
@@ -32,8 +32,6 @@ const Home = ({state, actions}) => {
           <Hero />
           <Banner />
           <Bar />
-          <Instagram />
-
         </>
         }
         {data.isBeerArchive && <Beers />}
