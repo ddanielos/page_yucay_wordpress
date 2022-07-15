@@ -54,7 +54,7 @@ const SubTitle = styled.p`
 `
 const BannerHashtag = styled.div`
   text-transform: uppercase;
-  font-size: 55px;
+  font-size: 60px;
   font-family: ${Fuente2};
   font-weight: 900;
   color: ${color_terciario};
@@ -65,7 +65,7 @@ const BannerHashtag = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1px;
-  grid-auto-rows: minmax(50px, 160px);
+  grid-auto-rows: minmax(50px, 180px);
 
 `
 const MascaraEspejo = styled.img`
