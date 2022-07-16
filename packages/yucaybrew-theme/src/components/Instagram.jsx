@@ -63,19 +63,19 @@ const Instagram = () => {
     )
   }
     return(<h1>Loading...</h1>)
-  }
+}
 
-  function slimUpPosts(response){
-    return response.data.map(node => {
-      let caption = node.caption
-      let media = node.media_type=="VIDEO"?node.thumbnail_url:node.media_url
-      return {
-        thumbnail: media,
-        url: node.permalink,
-        caption,
-        id: node.id
-      }
-    })
-  }
+function slimUpPosts(response){
+  return response.data.map(node => {
+    let caption = node.caption
+    let media = node.media_type=="VIDEO"?node.thumbnail_url:node.media_url
+    return {
+      thumbnail: media,
+      url: node.permalink,
+      caption,
+      id: node.id
+    }
+  })
+}
 
-  export default connect(Instagram);
+export default connect(Instagram);

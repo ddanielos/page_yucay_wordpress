@@ -10,6 +10,7 @@ import Post from '../components/Post'
 import Contact from '../components/Contact';
 import Bar from '../components/Bar';
 import Instagram from '../components/Instagram';
+import About from '../components/About';
 
 const ContainerHome = styled.div`
   width: 100%;
@@ -32,6 +33,7 @@ const Home = ({state, actions}) => {
           <Banner />
           <Bar />
           <Instagram />
+          <About />
         </>
         }
         {data.isBeerArchive && <Beers />}

@@ -1,6 +1,7 @@
   export const color_principal = '#f4efe2'
   export const color_secundario = '#c66a48'
   export const color_terciario = '#4c4b10'
+  export const color_cuaternario = '#ff4b01'
   export const color_blanco = 'white'
   export const color_negro = 'black'
   export const Fuente1 = "'RobotoMono', sans-serif"
