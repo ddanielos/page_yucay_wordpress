@@ -49,7 +49,6 @@ const Instagram = () => {
       <>
         <ListImages>
           {images.map(({ thumbnail, url }, index) => {
-            console.log(url)
             return(
               <Link key={index} href={url}>
                 <ItemContainer  >

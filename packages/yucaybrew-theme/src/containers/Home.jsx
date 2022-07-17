@@ -11,6 +11,7 @@ import Contact from '../components/Contact';
 import Bar from '../components/Bar';
 import Instagram from '../components/Instagram';
 import About from '../components/About';
+import OurBlog from '../components/OurBlog';
 
 const ContainerHome = styled.div`
   width: 100%;
@@ -34,6 +35,7 @@ const Home = ({state, actions}) => {
           <Bar />
           <Instagram />
           <About />
+          <OurBlog />
         </>
         }
         {data.isBeerArchive && <Beers />}
