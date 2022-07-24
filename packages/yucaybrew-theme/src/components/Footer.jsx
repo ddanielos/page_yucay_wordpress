@@ -2,6 +2,7 @@ import React from 'react'
 import ArteIcon from '../assets/static/img/arte-icon.png'
 import SanaIcon from '../assets/static/img/sana-icon.png'
 import SunImg from '../assets/static/img/sol-naciente.png'
+import News from './News'
 import { connect,styled } from 'frontity'
 import {color_cuaternario, Fuente2, color_principal, color_secundario, Fuente1} from '../styles/Variables'
 
@@ -9,7 +10,7 @@ const Container = styled.div`
   margin-top: 80px;
   color: ${color_principal};
   & h2{
-    font-size: 6rem;
+    font-size: 5.6rem;
     text-transform: uppercase;
     font-family: ${Fuente2};
     letter-spacing:0.1rem;
@@ -99,6 +100,7 @@ const Footer = () => {
           </Section1>
           <Section2>
             <h2>Suscripcion</h2>
+            <News />
             <p>Abre una Yucay y suscríbete:</p>
 
           </Section2>
