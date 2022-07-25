@@ -100,8 +100,8 @@ const Footer = () => {
           </Section1>
           <Section2>
             <h2>Suscripcion</h2>
-            <News />
             <p>Abre una Yucay y suscríbete:</p>
+            <News />
 
           </Section2>
         </Container1>
