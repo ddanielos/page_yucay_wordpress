@@ -1,5 +1,6 @@
 import React from 'react';
 import useFetch from 'react-fetch-hook';
+import PlayIcon from '../assets/static/img/playIcon.png';
 import Link from './Link';
 import { connect, styled } from 'frontity';
 import {color_terciario, Fuente1} from '../styles/Variables'
@@ -36,8 +37,14 @@ const Image = styled.img`
   object-fit: cover;
   object-position: center center;
 `
+const PlayImg = styled.img`
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  margin-top:-50px;
+`
 
-const Instagram = () => {
+const Instagram = ({state, openModal}) => {
   const { data } = useFetch(`https://graph.instagram.com/me/media?access_token=${TOKEN_IG}&fields=id, caption, media_type, media_url, permalink, thumbnail_url, timestamp, username`)
   if (data){
     const instaPosts = slimUpPosts(data)
@@ -45,16 +52,18 @@ const Instagram = () => {
     for (let i=0; i<12; i++){
       images.push(instaPosts[i])
     }
+    const setCaption = () => {
+
+    }
     return(
       <>
         <ListImages>
-          {images.map(({ thumbnail, url }, index) => {
+          {images.map(({ thumbnail, caption, media_url, type}, index) => {
             return(
-              <Link key={index} href={url}>
-                <ItemContainer  >
-                  <Image src={thumbnail} />
+                <ItemContainer>
+                  <Image key={index} src={thumbnail} onClick={(e)=> openModal(caption, media_url, type, e)}/>
+                  {type==="VIDEO"&&<PlayImg src={PlayIcon} />}
                 </ItemContainer>
-              </Link>
             )
           })}
         </ListImages>
@@ -72,7 +81,9 @@ function slimUpPosts(response){
       thumbnail: media,
       url: node.permalink,
       caption,
-      id: node.id
+      id: node.id,
+      media_url: node.media_url,
+      type: node.media_type
     }
   })
 }

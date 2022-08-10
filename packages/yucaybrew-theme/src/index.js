@@ -7,9 +7,27 @@ export default {
     theme: Root
   },
   state: {
-    theme: {}
+    theme: {
+      isOpenModal: false,
+      imageInstaURL: "",
+      imageInstaCaption: "",
+      typeInsta:"",
+    }
   },
   actions: {
-    theme: {}
+    theme: {
+      setIsOpenModal: ({state}) => value => {
+        state.theme.isOpenModal = value;
+      },
+      setImageInstaURL: ({state}) => value => {
+        state.theme.imageInstaURL = value;
+      },
+      setImageInstaCaption: ({state}) => value => {
+        state.theme.imageInstaCaption = value;
+      },
+      setTypeInsta: ({state}) => value => {
+        state.theme.typeInsta = value;
+      }
+    }
   }
 };

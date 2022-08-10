@@ -47,9 +47,15 @@ const UWraper = styled.div`
 `
 const ContainerLeft = styled.div`
   width: ${menu_width};
+  @media (max-width: 600px) {
+    display: none;
+  }
 `
 const ContainerRight = styled.div`
   width: ${menu_width};
+  @media (max-width: 600px) {
+    display: none;
+  }
 `
 const ContainerCenter = styled.div`
   margin-left: auto;
