@@ -10,6 +10,13 @@ const StyleBanner = styled.div`
    max-height: 464px;
    background-color: ${color_secundario};
    height: 24vw;
+   @media (max-width: 600px) {
+      position: absolute;
+      width: 375px;
+      height: 163px;
+      left: 0px;
+      top: 461px;
+   }
 `
 const BannerContainer = styled.div`
    height: 100%;
@@ -21,10 +28,16 @@ const BannerLeft = styled.div`
    visibility: visible;
    display: inline-grid;
    justify-items: center;
+   @media (max-width: 600px) {
+      display: none;
+   }
 `
 const BannerRight = styled.div`
    display: inline-grid;
    justify-items: center;
+   @media (max-width: 600px) {
+      display: none;
+   }
 `
 const BannerLeftImg = styled.img`
    padding: 10px 0px;
@@ -50,6 +63,9 @@ const BannerCenterContainer = styled.div`
    flex-direction: column;
    justify-content: space-around;
    align-items: center;
+   @media (max-width: 600px) {
+      flex-direction: column;
+   }
 `
 const BannerFrases = styled.p`
    font-family: ${Fuente1};
@@ -59,6 +75,14 @@ const BannerFrases = styled.p`
    color: ${color_principal};
    padding-top: 30px;
    padding-bottom: 30px;
+   @media (max-width: 600px) {
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+   }
 `
 const BannerTodas = styled.p`
    padding: 20px;
@@ -69,6 +93,14 @@ const BannerTodas = styled.p`
    color: ${color_principal};
    text-transform: uppercase;
    letter-spacing:0.1rem;
+   @media (max-width: 600px) {
+      padding-top: 10px;
+      padding-left: 33px;
+      width: 320px;
+      height: 45px;
+      font-size: 19px;
+      border: 4px solid ${color_principal};
+   }
 `
 
 const Banner = () => {

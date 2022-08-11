@@ -44,19 +44,21 @@ const Home = ({state, actions}) => {
     <>
       <Base />
       <ContainerHome>
-        <Header />
-        {/*data.isHome &&
+        {<Header />}
+        {data.isHome &&
         <>
           <Hero />
           <Banner />
           <Bar />
           {state.theme.isOpenModal && <Modal closeModal={closeModal}/>}
           <Instagram openModal={openModal}/>
+          {/*
           <About />
           <OurBlog />
           <Footer />
+          */}
         </>
-      */}
+        }
         {data.isBeerArchive && <Beers />}
         {data.isBlogsArchive && <Blogs />}
         {data.isBlogs && <Post />}

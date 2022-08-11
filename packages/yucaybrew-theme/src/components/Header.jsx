@@ -44,6 +44,15 @@ const UWraper = styled.div`
   margin: auto;
   align-items: center;
   padding: 20px 0px;
+
+  @media (max-width: 600px) {
+    position: absolute;
+    width: 100vw;
+    height: 129px;
+    left: 0px;
+    top: 0px;
+    background: rgba(244, 239, 226, 0.7);
+  }
 `
 const ContainerLeft = styled.div`
   width: ${menu_width};
@@ -60,6 +69,8 @@ const ContainerRight = styled.div`
 const ContainerCenter = styled.div`
   margin-left: auto;
   margin-right: auto;
+
+  
 `
 const MenuItem = styled.li`
   padding-left: 1.5em;
@@ -93,6 +104,15 @@ const MenuLogo = styled.img`
   height: auto;
   display: block;
   margin: auto;
+
+
+  @media (max-width: 600px) {
+    position: absolute;
+    width: 148px;
+    height: 111px;
+    left: 119px;
+    top: 8px;
+  }
 `
 
 const Header = () => {

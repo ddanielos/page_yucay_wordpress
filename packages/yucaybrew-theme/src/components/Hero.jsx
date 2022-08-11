@@ -21,6 +21,15 @@ const HeroBackground = styled.div`
    background-position: center top;
    flex-direction: column;
    justify-content: space-evenly;
+
+   @media (max-width: 600px) {
+      position: absolute;
+      width: 100vw;
+      height: 461px;
+      top: 0px;
+      backdrop-filter: blur(4px);
+      object-fit: fill;
+   }
 `
 const HeroBackgroundDevice = styled.div`
    visibility: hidden;
@@ -35,6 +44,12 @@ const HeroTitle = styled.img`
    margin-left: auto;
    margin-right: auto;
    padding-top: 130px;
+
+   @media (max-width: 600px) {
+      position: absolute;
+      width: 216px;
+      top: 30px
+   }
 `
 const HeroSlogan = styled.h2`
    color: ${color_principal};
@@ -45,6 +60,15 @@ const HeroSlogan = styled.h2`
    letter-spacing: -1.26px;
    border-bottom: 2px solid ${color_principal};
    word-spacing: 0.4em;
+
+   @media (max-width:600px){
+      position: absolute;
+      top: 380px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 15px;
+   }
 `
 
 const Hero = () => {

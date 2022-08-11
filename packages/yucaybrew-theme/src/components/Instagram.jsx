@@ -5,7 +5,7 @@ import Link from './Link';
 import { connect, styled } from 'frontity';
 import {color_terciario, Fuente1} from '../styles/Variables'
 
-const TOKEN_IG = 'IGQVJVX3dvTXFzNFZA0V3piSTJZAZAGRsMWJCeFhEb29vZA0otZAUtFTWtmZAnpUSFFKTE1vQWRUcm0yOHI1OVN5RWhnMGlheGNoUVRaaXlSN1YyV1pEZAVNKc2JPSGJXWmFmSXFNMzM3MUhQcGdIOUJGcW44RwZDZD'
+const TOKEN_IG = ''
 
 const ListImages = styled.div`
   padding-top: 50px;
@@ -58,7 +58,7 @@ const Instagram = ({state, openModal}) => {
     return(
       <>
         <ListImages>
-          {images.map(({ thumbnail, caption, media_url, type}, index) => {
+          {images.map(({ thumbnail, caption, media_url, type }, index) => {
             return(
                 <ItemContainer>
                   <Image key={index} src={thumbnail} onClick={(e)=> openModal(caption, media_url, type, e)}/>
