@@ -34,6 +34,11 @@ const ModalDialog = styled.div`
     max-width: 600px;
     object-fit: cover;
     border: 4px solid black;
+    @media (max-width: 600px) {
+      width: 350px;
+      height: 350px;
+      margin: auto;
+    }
   }
   & p {
     padding: 30px;
@@ -41,6 +46,11 @@ const ModalDialog = styled.div`
     font-weight: bold;
     letter-spacing: 0.05rem;
     line-height: 25px;
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    padding: 0px;
+    margin: auto;
   }
 `
 const Img = styled.img`
@@ -50,6 +60,12 @@ const Img = styled.img`
   max-width: 600px;
   object-fit: cover;
   border: 4px solid black;
+
+  @media (max-width: 600px) {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
 `
 const ImgInsta = styled.img`
   height: 40px;

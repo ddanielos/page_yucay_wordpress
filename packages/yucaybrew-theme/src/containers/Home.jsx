@@ -52,8 +52,8 @@ const Home = ({state, actions}) => {
           <Bar />
           {state.theme.isOpenModal && <Modal closeModal={closeModal}/>}
           <Instagram openModal={openModal}/>
-          {/*
           <About />
+          {/*
           <OurBlog />
           <Footer />
           */}

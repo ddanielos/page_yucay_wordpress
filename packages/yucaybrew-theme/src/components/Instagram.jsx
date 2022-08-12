@@ -30,6 +30,10 @@ const ItemContainer = styled.div`
     box-shadow: ${color_terciario} 0px 10px 15px -5px;
     transform: translateY(-2%);
   }
+  @media (max-width: 600px) {
+    width: 115px;
+    height: 115px;
+  }
 `
 
 const Image = styled.img`
@@ -48,8 +52,10 @@ const Instagram = ({state, openModal}) => {
   const { data } = useFetch(`https://graph.instagram.com/me/media?access_token=${TOKEN_IG}&fields=id, caption, media_type, media_url, permalink, thumbnail_url, timestamp, username`)
   if (data){
     const instaPosts = slimUpPosts(data)
+    const countImages = screen.width < 601 ? 9:12;
+
     let images = [];
-    for (let i=0; i<12; i++){
+    for (let i=0; i<countImages; i++){
       images.push(instaPosts[i])
     }
     const setCaption = () => {

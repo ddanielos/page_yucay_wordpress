@@ -4,8 +4,16 @@ import LogoAlt from '../assets/static/img/logo-alt.png'
 import { connect,styled } from 'frontity'
 import {color_terciario, color_cuaternario, Fuente2, color_principal, color_secundario, Fuente1} from '../styles/Variables'
 
-const ImageFlor = styled.img`
-
+const ImageFlor1 = styled.img`
+  @media (max-width: 600px) {
+    width: 68px;
+    margin: auto;
+  }
+`
+const ImageFlor2 = styled.img`
+  @media (max-width: 600px) {
+    display: none;
+  }
 `
 const AboutTitle = styled.div`
   margin-top: 90px;
@@ -15,6 +23,10 @@ const AboutTitle = styled.div`
   justify-content: space-evenly;
   padding-left: 100px;
   padding-right: 100px;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    padding: 0px;
+  }
 `
 const Title = styled.h2`
   text-transform: uppercase;
@@ -24,12 +36,21 @@ const Title = styled.h2`
   text-align: center;
   -webkit-text-stroke: 2.5px ${color_terciario};
   letter-spacing:0.2rem;
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+    text-align: center;
+    -webkit-text-stroke: 1.5px ${color_terciario};
+    margin: auto;
+  }
 `
 const AboutContent = styled.div`
   display: flex;
   flex-direction: row;
   height: 550px;
-
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
   `
 const AboutUs = styled.div`
   color: ${color_principal};
@@ -38,6 +59,9 @@ const AboutUs = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  @media (max-width: 600px) {
+    width: 100vw;
+  }
 `
 const What = styled.div`
   color: ${color_principal};
@@ -46,6 +70,9 @@ const What = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  @media (max-width: 600px) {
+    width: 100vw;
+  }
 `
 const Parrafo = styled.section`
   width: 500px;
@@ -58,6 +85,10 @@ const Parrafo = styled.section`
     font-weight:900;
     letter-spacing:0.2rem;
     padding-bottom:1.3rem;
+    @media (max-width: 600px) {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
   }
   & p{
     font-family: ${Fuente1};
@@ -66,25 +97,47 @@ const Parrafo = styled.section`
     line-height: 30px;
     padding-top: 2rem;
     text-align: justify;
+    @media (max-width: 600px) {
+      width: 300px;
+      margin: auto;
+      padding-top: 10px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15px;
+      text-align: justify;
+      letter-spacing: 0.09em;
+    }
+  }
+  @media (max-width: 600px) {
+    height: 360px;
+    padding-top: 55px;
   }
 `
 const SectionLogo = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: -350px;
+  margin-top: -290px;
+  @media (max-width: 600px) {
+    margin-top: -255px;
+  }
 `
 const Logo = styled.img`
   margin: auto;
+  @media (max-width: 600px) {
+    width: 98px;
+    opacity: 0.7;
+  }
 `
 
 const About = () => {
   return(
     <>
       <AboutTitle>
-        <ImageFlor src={FlorO} alt="" />
+        <ImageFlor1 src={FlorO} alt="" />
         <Title>Quienes Somos</Title>
-        <ImageFlor src={FlorO} alt="" />
+        <ImageFlor2 src={FlorO} alt=""  />
       </AboutTitle>
       <AboutContent>
         <AboutUs>
