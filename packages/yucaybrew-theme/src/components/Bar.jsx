@@ -5,7 +5,7 @@ import { connect, styled, css } from 'frontity';
 import {color_principal, color_secundario, color_terciario, Fuente1, Fuente2} from '../styles/Variables'
 
 const ContainerMaster = styled.div`
-  margin-top: 600px;
+  
 `
 
 const Container = styled.div`

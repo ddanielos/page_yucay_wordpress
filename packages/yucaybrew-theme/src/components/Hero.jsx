@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect, styled, css} from 'frontity'
-import background from '../assets/static/img/background_hero.png';
+import background from '../assets/static/img/background_hero.jpg';
 import title from '../assets/static/img/hero.png';
 import logo from '../assets/static/img/logo.png';
 import {Fuente1, size_menu_1920, color_principal} from '../styles/Variables'

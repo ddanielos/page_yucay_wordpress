@@ -38,7 +38,7 @@ const Title = styled.h2`
   letter-spacing:0.2rem;
 
   @media (max-width: 600px) {
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
     -webkit-text-stroke: 1.5px ${color_terciario};
     margin: auto;

@@ -7,6 +7,9 @@ import {color_principal, Fuente1} from '../styles/Variables'
 
 const BlogItemContainer = styled.div`
   padding: 60px 0 60px 0;
+  @media (max-width: 600px) {
+  padding: 30px 0 30px 0;
+  }
 `
 const BlogItemWraper = styled.div`
   border-radius: 14px;
@@ -23,10 +26,15 @@ const BlogItemWraper = styled.div`
     box-shadow: rgb(210, 120, 90) 0px 10px 15px -5px;
     transform: translateY(-2%);
   }
+  @media (max-width: 600px) {
+    width: 300px;
+  }
 `
 const BlogItemImg = styled.img`
   width: 100%;
   height: auto;
+  object-fit: scale-down;
+  margin: auto;
 `
 const BlogItemCard = styled.div`
   height: 200px;
@@ -45,10 +53,16 @@ const BlogItemTitle = styled.h3`
   font-size: 1.0rem;
   margin-top: 10px;
   margin-bottom: 10px;
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
 `
 const BlogItemDescription = styled.p`
   font-family: Fuente1;
   font-size: 1rem;
+  @media (max-width: 600px) {
+    font-size: 13px;
+  }
 `
 const BlogItemImgContainer = styled.div`
   width: 400px;

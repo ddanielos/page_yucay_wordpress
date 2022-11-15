@@ -28,18 +28,35 @@ const Banner = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   margin-bottom:-3px;
+  @media (max-width: 600px) {
+    width: 300px;
+    justify-content: space-between;
+  }
 `
 const Art = styled.img`
   margin-top: -150px;
-  object-fit:none ;
+  object-fit:none;
+  @media (max-width: 600px) {
+    margin-top: -10px;
+    width: 86px;
+    object-fit: contain;
+  }
 `
 const Sun = styled.img`
-  object-fit:none ;
+  object-fit:none;
+  @media (max-width: 600px) {
+    margin-left: -86px;
+    width: 375px;
+    object-fit: contain;
+  }
 `
 const Sana = styled.img`
   margin-top: -150px;
-  object-fit:none ;
-
+  object-fit:none;
+  @media (max-width: 600px) {
+    width: 86px;
+    object-fit: contain;
+  }
 `
 const Container1 = styled.div`
   width: 100vw;

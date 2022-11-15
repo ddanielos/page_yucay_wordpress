@@ -5,7 +5,7 @@ import Link from './Link';
 import { connect, styled } from 'frontity';
 import {color_terciario, Fuente1} from '../styles/Variables'
 
-const TOKEN_IG = ''
+const TOKEN_IG = 'IGQVJYTXlyTDhWOXRsRy1qSDMwejRiYVR3M2NEeFBIV05YZA1ZASU3AwMFNkU21tY3JRRmdDWVljWURQdWhESU1QUHpLMlcteFJwSFJycENSRXNhVVFBTWVpZAXVKNnBZAQkxpX2dvTUJhSkR6ZAWcwR2N4NQZDZD'
 
 const ListImages = styled.div`
   padding-top: 50px;
@@ -48,7 +48,7 @@ const PlayImg = styled.img`
   margin-top:-50px;
 `
 
-const Instagram = ({state, openModal}) => {
+const Instagram = ({openModal}) => {
   const { data } = useFetch(`https://graph.instagram.com/me/media?access_token=${TOKEN_IG}&fields=id, caption, media_type, media_url, permalink, thumbnail_url, timestamp, username`)
   if (data){
     const instaPosts = slimUpPosts(data)

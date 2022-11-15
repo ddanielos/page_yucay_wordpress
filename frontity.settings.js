@@ -26,6 +26,11 @@ const settings = {
               type: "blogs",
               endpoint: "blogs",
               archive: "/blogs"
+            },
+            {
+              type: "meal",
+              endpoint: "meal",
+              archive: "/meals"
             }
           ]
         }

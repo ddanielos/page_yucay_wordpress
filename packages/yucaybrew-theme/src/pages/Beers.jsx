@@ -1,5 +1,5 @@
 import React from 'react';
-import {connect} from 'frontity';
+import { connect } from 'frontity';
 import ListOfBeers from '../components/ListOfBeers';
 import BeerItem from '../components/BeerItem';
 //import '../assets/styles/styles.styl'

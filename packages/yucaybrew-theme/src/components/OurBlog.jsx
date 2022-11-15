@@ -5,8 +5,16 @@ import BlogItem from './BlogItem'
 import { connect,styled } from 'frontity'
 import {color_terciario, color_cuaternario, Fuente2, color_principal, color_secundario, Fuente1} from '../styles/Variables'
 
-const ImageFlor = styled.img`
-
+const ImageFlor1 = styled.img`
+  @media (max-width: 600px) {
+    width: 68px;
+    margin: auto;
+  }
+`
+const ImageFlor2 = styled.img`
+  @media (max-width: 600px) {
+    display: none;
+  }
 `
 const AboutTitle = styled.div`
   margin-top: 280px;
@@ -16,6 +24,12 @@ const AboutTitle = styled.div`
   justify-content: space-evenly;
   padding-left: 100px;
   padding-right: 100px;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    padding: 0px;
+    margin-top: 395px;
+    margin-bottom: 5px;
+  }
 `
 const Title = styled.h2`
   text-transform: uppercase;
@@ -25,27 +39,36 @@ const Title = styled.h2`
   text-align: center;
   -webkit-text-stroke: 2.5px ${color_terciario};
   letter-spacing:0.2rem;
+  @media (max-width: 600px) {
+    font-size: 27px;
+    text-align: center;
+    -webkit-text-stroke: 1.5px ${color_terciario};
+    margin: auto;
+  }
 `
 const AboutContent = styled.div`
   display: flex;
   flex-direction: row;
   height: 550px;
-
-  `
+  @media (max-width: 600px) {
+    flex-direction: column;
+    height:100%;
+  }
+`
 
 const OurBlog = ({ state }) => {
   const data = state.source.get(/blogs/)
   let datos = [];
   data.items?.map(({ id }) => {
     datos.push(id);
-    if(datos[3]){datos.splice(3,1)};
+    if(datos[screen.width<601?2:3]){datos.splice(screen.width<601?2:3,1)};
   })
   return(
     <>
       <AboutTitle>
-        <ImageFlor src={FlorO} alt="" />
+        <ImageFlor1 src={FlorO} alt="" />
         <Title>De nuestro blog</Title>
-        <ImageFlor src={FlorO} alt="" />
+        <ImageFlor2 src={FlorO} alt="" />
       </AboutTitle>
       <AboutContent>
         <ListOfBlogs>

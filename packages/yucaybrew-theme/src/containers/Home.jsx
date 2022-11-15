@@ -14,6 +14,7 @@ import About from '../components/About';
 import OurBlog from '../components/OurBlog';
 import Footer from '../components/Footer';
 import Modal from '../components/Modal';
+import Menu from '../pages/Menu';
 
 const ContainerHome = styled.div`
   width: 100%;
@@ -24,6 +25,7 @@ const Home = ({state, actions}) => {
   useEffect(()=>{
     actions.source.fetch("/blogs");
     actions.source.fetch("/beers");
+    actions.source.fetch("/meals");
   },[])
 
   const openModal = (caption, media_url, type) => {
@@ -44,7 +46,7 @@ const Home = ({state, actions}) => {
     <>
       <Base />
       <ContainerHome>
-        {<Header />}
+        {data.isMealArchive?<Menu />:<Header />}
         {data.isHome &&
         <>
           <Hero />
@@ -53,8 +55,8 @@ const Home = ({state, actions}) => {
           {state.theme.isOpenModal && <Modal closeModal={closeModal}/>}
           <Instagram openModal={openModal}/>
           <About />
-          {/*
           <OurBlog />
+          {/*
           <Footer />
           */}
         </>

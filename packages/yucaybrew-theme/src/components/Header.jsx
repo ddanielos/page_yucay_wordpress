@@ -150,7 +150,7 @@ const Header = () => {
                           Login
                       <MenuItemImg src={user} alt=""/>
                     </MenuItem>
-                    <MenuItem><MenuItemImg src={sale} alt=""/></MenuItem>
+                    <MenuItem>{/*<MenuItemImg src={sale} alt=""/>*/}</MenuItem>
                 </MenuLeftRight>
               </ContainerRight>
           </UWraper>
