@@ -5,7 +5,7 @@ import Link from './Link';
 import { connect, styled } from 'frontity';
 import {color_terciario, Fuente1} from '../styles/Variables'
 
-const TOKEN_IG = 'IGQVJYTXlyTDhWOXRsRy1qSDMwejRiYVR3M2NEeFBIV05YZA1ZASU3AwMFNkU21tY3JRRmdDWVljWURQdWhESU1QUHpLMlcteFJwSFJycENSRXNhVVFBTWVpZAXVKNnBZAQkxpX2dvTUJhSkR6ZAWcwR2N4NQZDZD'
+const TOKEN_IG = ''
 
 const ListImages = styled.div`
   padding-top: 50px;
